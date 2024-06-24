@@ -54,11 +54,11 @@ button:hover {
 }
 
 .fa-moon {
-  color: #f1c40f;
+  color: #f1c40f !important;
 }
 
 .fa-sun {
-  color: #f39c12;
+  color: #f39c12 !important;
 }
 
 .checkbox-label .ball {

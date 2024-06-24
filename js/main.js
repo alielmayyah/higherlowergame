@@ -82,9 +82,23 @@ guessButton.onclick = function () {
 
 //nightmode
 
-checkBox = document.getElementById("checkbox");
+let checkBox = document.getElementById("checkbox");
+let nightMode = false;
 
 checkBox.onclick = function () {
-  document.body.className = "text-dark";
-  guessCircle.classList.add("text-white");
+  if (checkBox.checked) {
+    document.body.classList.add("bg-dark");
+    document.body.classList.remove("bg-light");
+    document.body.classList.add("text-light");
+    document.body.classList.remove("text-dark");
+    guessCircle.classList.add("text-white");
+    nightMode = true;
+  } else {
+    document.body.classList.add("bg-light");
+    document.body.classList.remove("bg-dark");
+    document.body.classList.add("text-dark");
+    document.body.classList.remove("text-light");
+    guessCircle.classList.add("text-white");
+    nightMode = false;
+  }
 };
