@@ -1,0 +1,36 @@
+button {
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+button:hover {
+  transform: scale(105%);
+}
+
+.hidden {
+  display: none !important;
+}
+
+#guess-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+#decrease {
+  transform: rotate(180deg);
+}
+
+#decrease:hover {
+  transform: rotate(180deg) scale(1.1);
+  cursor: pointer;
+}
+
+#increase:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

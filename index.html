@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Higher Lower Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+  </head>
+  <body class="bg-dark text-light">
+    <div class="container-xl text-center">
+      <div class="display-1">Higher Lower Game</div>
+      <div id="start-text" class="display-6 my-3">
+        Start by guessing a number <span class="text-primary"> 1 - 10 </span>
+      </div>
+      <div class="row">
+        <div class="col my-3">
+          <i
+            id="higher"
+            class="fa-solid fa-circle-up display-1"
+            style="color: #63e6be"
+          ></i>
+          <i
+            id="lower"
+            class="fa-solid fa-circle-up display-1"
+            style="color: #e66b63; transform: rotate(180deg)"
+          ></i>
+        </div>
+      </div>
+      <div id="status-text" class="display-5 mt-4"></div>
+      <div class="row justify-content-center align-content-center my-5">
+        <i
+          id="decrease"
+          class="fa-solid fa-chevron-right display-1 col-3 align-content-center"
+        ></i>
+        <div id="guess-circle" class="bg-primary display-4 col-3">0</div>
+        <i
+          id="increase"
+          class="fa-solid fa-chevron-right display-1 col-3 align-content-center"
+        ></i>
+      </div>
+
+      <button id="guess-button" class="btn btn-primary px-5 py-2">Guess</button>
+      <div id="guesses-text" class="display-6 mt-4"></div>
+
+      <div class="row">
+        <div id="instructions" class="text-start mt-4 align-self-center">
+          <h3>How to Play</h3>
+          <p>1. Guess a number by clicking the increase or decrease arrows.</p>
+          <p>2. Single click to increase the guess by one.</p>
+          <p>3. Click "Guess" to check your guess against the target number.</p>
+          <p>
+            4. The game will tell you if the target number is higher or lower
+            than your guess.
+          </p>
+          <p>5. Keep guessing until you find the correct number!</p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
