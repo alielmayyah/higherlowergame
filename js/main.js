@@ -79,3 +79,12 @@ guessButton.onclick = function () {
   }
   guessesText.innerHTML = `Guesses = ${guessesCount}`;
 };
+
+//nightmode
+
+checkBox = document.getElementById("checkbox");
+
+checkBox.onclick = function () {
+  document.body.className = "text-dark";
+  guessCircle.classList.add("text-white");
+};
